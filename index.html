@@ -19,23 +19,17 @@
   </script>
   
   <style>
-    body{
-      text-align:center;
-    }
-    
-    img{
-      display:block;
-      margin:auto;
-    }
+   
    body{
   background:black;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
+    color:white;
+  text-align:center;
 }
 
 .typing{
+  display:inline-block;
+  margin:auto;
+
   color:cyan;
   font-size:40px;
   font-family:Arial;
@@ -52,42 +46,62 @@
   0 0 20px cyan;
 
   animation:
-  typing 4s steps(18) infinite,
+  typing 4s steps(28) infinite,
   blink 0.7s infinite;
 }
-
 @keyframes typing{
   from{
     width:0;
   }
 
   to{
-    width:370px;
+    width:28ch;
   }
 }
-
 @keyframes blink{
   50%{
     border-color:transparent;
   }
 }
+   a{
+  transition:0.3s;
+  color:cyan;
+  text-decoration:none;
+   }
+   a:hover{
+  text-shadow:
+  0 0 5px cyan,
+  0 0 10px cyan,
+  0 0 20px cyan;
+   }
+ img{
+  display:block;
+  margin:auto;
+  width:200px;
+  max-width:90%;
+ }
+   p{
+  padding:10px;
+   }
+   
 
-<h1 class="typing">WARNING FOR RASHFA TEACHER<h1>
- 
+
   </style>
 </head>
 
 <body>
+ <h2 class="typing">WARNING FOR RASHFA TEACHER</h2>
+ 
   
 <h1>AFEEF HASSIM</h1>
 
-<img src="solo.jpg" width="200">
+<img src="solo.jpg">
 
 <p>the above picture shows the aura farmer afeef hassim in his squirrel version</p>
 
 <hr>
 
-<img src="all.png" width="200">
+<img src="all.png">
 <p>the above picture shows the aura farmer afeef hassim in his free fire god version</p>
 
 <hr>
