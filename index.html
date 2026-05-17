@@ -27,14 +27,57 @@
       display:block;
       margin:auto;
     }
+   body{
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.typing{
+  color:cyan;
+  font-size:40px;
+  font-family:Arial;
+
+  white-space:nowrap;
+  overflow:hidden;
+  width:0;
+
+  border-right:3px solid cyan;
+
+  text-shadow:
+  0 0 5px cyan,
+  0 0 10px cyan,
+  0 0 20px cyan;
+
+  animation:
+  typing 4s steps(18) infinite,
+  blink 0.7s infinite;
+}
+
+@keyframes typing{
+  from{
+    width:0;
+  }
+
+  to{
+    width:370px;
+  }
+}
+
+@keyframes blink{
+  50%{
+    border-color:transparent;
+  }
+}
+
+<h1 class="typing">WARNING FOR RASHFA TEACHER<h1>
+ 
   </style>
 </head>
 
 <body>
-  
-  <marquee width="100%"
-  behavior="alternate"
-  bgcolor="green"><h4>warning rashfa teacher</h4></marquee>
   
 <h1>AFEEF HASSIM</h1>
 
